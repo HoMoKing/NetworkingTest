@@ -52,6 +52,9 @@
 		04D3BF9C1C3F63FE0067B6A7 /* cocoapodsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoapodsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D3BFA01C3F63FE0067B6A7 /* cocoapodsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoapodsTestUITests.m; sourceTree = "<group>"; };
 		04D3BFA21C3F63FE0067B6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D3BFB01C3F81740067B6A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04D3BFB11C3F81900067B6A7 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		04D3BFB21C3F81F30067B6A7 /* SDImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDImport.h; sourceTree = "<group>"; };
 		4DE8A4635C262C28087A9D11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37DE3BBA0DA2A9EDDDB3848 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FDDF00DC0C6B3F47E3E1FD95 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				04D3BF7F1C3F63FE0067B6A7 /* AppDelegate.m */,
 				04D3BF811C3F63FE0067B6A7 /* ViewController.h */,
 				04D3BF821C3F63FE0067B6A7 /* ViewController.m */,
+				04D3BFB01C3F81740067B6A7 /* PrefixHeader.pch */,
+				04D3BFAE1C3F80C60067B6A7 /* Other */,
 				04D3BF841C3F63FE0067B6A7 /* Main.storyboard */,
 				04D3BF871C3F63FE0067B6A7 /* Assets.xcassets */,
 				04D3BF891C3F63FE0067B6A7 /* LaunchScreen.storyboard */,
@@ -145,6 +150,15 @@
 				04D3BFA21C3F63FE0067B6A7 /* Info.plist */,
 			);
 			path = cocoapodsTestUITests;
+			sourceTree = "<group>";
+		};
+		04D3BFAE1C3F80C60067B6A7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04D3BFB11C3F81900067B6A7 /* Common.h */,
+				04D3BFB21C3F81F30067B6A7 /* SDImport.h */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		AA457A46E9E8251502E683A5 /* Pods */ = {
@@ -229,6 +243,7 @@
 		04D3BF701C3F63FE0067B6A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AK;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "王永军";
 				TargetAttributes = {
@@ -487,6 +502,8 @@
 			baseConfigurationReference = E37DE3BBA0DA2A9EDDDB3848 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/cocoapodsTest/PrefixHeader.pch";
 				INFOPLIST_FILE = cocoapodsTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +517,8 @@
 			baseConfigurationReference = FDDF00DC0C6B3F47E3E1FD95 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/cocoapodsTest/PrefixHeader.pch";
 				INFOPLIST_FILE = cocoapodsTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
