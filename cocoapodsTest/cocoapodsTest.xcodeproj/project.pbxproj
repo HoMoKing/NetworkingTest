@@ -15,6 +15,21 @@
 		04D3BF8B1C3F63FE0067B6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D3BF891C3F63FE0067B6A7 /* LaunchScreen.storyboard */; };
 		04D3BF961C3F63FE0067B6A7 /* cocoapodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3BF951C3F63FE0067B6A7 /* cocoapodsTestTests.m */; };
 		04D3BFA11C3F63FE0067B6A7 /* cocoapodsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3BFA01C3F63FE0067B6A7 /* cocoapodsTestUITests.m */; };
+		04E47A111C45EC65004B8139 /* backGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A0D1C45EC65004B8139 /* backGround.png */; };
+		04E47A121C45EC65004B8139 /* backGround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A0E1C45EC65004B8139 /* backGround@2x.png */; };
+		04E47A131C45EC65004B8139 /* backGround@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A0F1C45EC65004B8139 /* backGround@3x.png */; };
+		04E47A141C45EC65004B8139 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A101C45EC65004B8139 /* Contents.json */; };
+		04E47A161C45F006004B8139 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47A151C45F006004B8139 /* UIKit.framework */; };
+		04E47A181C45F00C004B8139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E47A171C45F00C004B8139 /* Foundation.framework */; };
+		04E47A1C1C45F46A004B8139 /* AKNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A1B1C45F46A004B8139 /* AKNavController.m */; };
+		04E47A221C45F553004B8139 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A1E1C45F553004B8139 /* Contents.json */; };
+		04E47A231C45F553004B8139 /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A1F1C45F553004B8139 /* nav_back.png */; };
+		04E47A241C45F553004B8139 /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A201C45F553004B8139 /* nav_back@2x.png */; };
+		04E47A251C45F553004B8139 /* nav_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A211C45F553004B8139 /* nav_back@3x.png */; };
+		04E47A291C45FBD7004B8139 /* AKCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A281C45FBD7004B8139 /* AKCustom.m */; };
+		04E47A2F1C460305004B8139 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A2E1C460305004B8139 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04E47A341C4603EA004B8139 /* AKFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A331C4603EA004B8139 /* AKFirst.m */; };
+		04E47A371C4603F6004B8139 /* AKSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A361C4603F6004B8139 /* AKSecond.m */; };
 		709AE2B30EBF41B99625E340 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE8A4635C262C28087A9D11 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,9 +67,29 @@
 		04D3BF9C1C3F63FE0067B6A7 /* cocoapodsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoapodsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D3BFA01C3F63FE0067B6A7 /* cocoapodsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoapodsTestUITests.m; sourceTree = "<group>"; };
 		04D3BFA21C3F63FE0067B6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04D3BFB01C3F81740067B6A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04D3BFB01C3F81740067B6A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		04D3BFB11C3F81900067B6A7 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		04D3BFB21C3F81F30067B6A7 /* SDImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDImport.h; sourceTree = "<group>"; };
+		04E47A0D1C45EC65004B8139 /* backGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGround.png; sourceTree = "<group>"; };
+		04E47A0E1C45EC65004B8139 /* backGround@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGround@2x.png"; sourceTree = "<group>"; };
+		04E47A0F1C45EC65004B8139 /* backGround@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGround@3x.png"; sourceTree = "<group>"; };
+		04E47A101C45EC65004B8139 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		04E47A151C45F006004B8139 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04E47A171C45F00C004B8139 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04E47A1A1C45F46A004B8139 /* AKNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNavController.h; sourceTree = "<group>"; };
+		04E47A1B1C45F46A004B8139 /* AKNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNavController.m; sourceTree = "<group>"; };
+		04E47A1E1C45F553004B8139 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		04E47A1F1C45F553004B8139 /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
+		04E47A201C45F553004B8139 /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		04E47A211C45F553004B8139 /* nav_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@3x.png"; sourceTree = "<group>"; };
+		04E47A271C45FBD7004B8139 /* AKCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKCustom.h; sourceTree = "<group>"; };
+		04E47A281C45FBD7004B8139 /* AKCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKCustom.m; sourceTree = "<group>"; };
+		04E47A2D1C460305004B8139 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		04E47A2E1C460305004B8139 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		04E47A321C4603EA004B8139 /* AKFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKFirst.h; sourceTree = "<group>"; };
+		04E47A331C4603EA004B8139 /* AKFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKFirst.m; sourceTree = "<group>"; };
+		04E47A351C4603F6004B8139 /* AKSecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSecond.h; sourceTree = "<group>"; };
+		04E47A361C4603F6004B8139 /* AKSecond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSecond.m; sourceTree = "<group>"; };
 		4DE8A4635C262C28087A9D11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37DE3BBA0DA2A9EDDDB3848 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FDDF00DC0C6B3F47E3E1FD95 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E47A181C45F00C004B8139 /* Foundation.framework in Frameworks */,
+				04E47A161C45F006004B8139 /* UIKit.framework in Frameworks */,
 				709AE2B30EBF41B99625E340 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,7 +152,11 @@
 				04D3BF7F1C3F63FE0067B6A7 /* AppDelegate.m */,
 				04D3BF811C3F63FE0067B6A7 /* ViewController.h */,
 				04D3BF821C3F63FE0067B6A7 /* ViewController.m */,
-				04D3BFB01C3F81740067B6A7 /* PrefixHeader.pch */,
+				04E47A301C4603D2004B8139 /* First */,
+				04E47A311C4603D2004B8139 /* Second */,
+				04E47A261C45FBC2004B8139 /* Custom */,
+				04E47A191C45F438004B8139 /* Main */,
+				04E47A2B1C4602FA004B8139 /* Lib */,
 				04D3BFAE1C3F80C60067B6A7 /* Other */,
 				04D3BF841C3F63FE0067B6A7 /* Main.storyboard */,
 				04D3BF871C3F63FE0067B6A7 /* Assets.xcassets */,
@@ -155,10 +196,105 @@
 		04D3BFAE1C3F80C60067B6A7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				04D3BFB01C3F81740067B6A7 /* PrefixHeader.pch */,
 				04D3BFB11C3F81900067B6A7 /* Common.h */,
 				04D3BFB21C3F81F30067B6A7 /* SDImport.h */,
+				04E47A0A1C45EC65004B8139 /* Source */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		04E47A0A1C45EC65004B8139 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A0B1C45EC65004B8139 /* Image */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		04E47A0B1C45EC65004B8139 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A0C1C45EC65004B8139 /* backGround.imageset */,
+				04E47A1D1C45F553004B8139 /* nav_back.imageset */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		04E47A0C1C45EC65004B8139 /* backGround.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A0D1C45EC65004B8139 /* backGround.png */,
+				04E47A0E1C45EC65004B8139 /* backGround@2x.png */,
+				04E47A0F1C45EC65004B8139 /* backGround@3x.png */,
+				04E47A101C45EC65004B8139 /* Contents.json */,
+			);
+			path = backGround.imageset;
+			sourceTree = "<group>";
+		};
+		04E47A191C45F438004B8139 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A1A1C45F46A004B8139 /* AKNavController.h */,
+				04E47A1B1C45F46A004B8139 /* AKNavController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04E47A1D1C45F553004B8139 /* nav_back.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A1E1C45F553004B8139 /* Contents.json */,
+				04E47A1F1C45F553004B8139 /* nav_back.png */,
+				04E47A201C45F553004B8139 /* nav_back@2x.png */,
+				04E47A211C45F553004B8139 /* nav_back@3x.png */,
+			);
+			name = nav_back.imageset;
+			path = ../nav_back.imageset;
+			sourceTree = "<group>";
+		};
+		04E47A261C45FBC2004B8139 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A271C45FBD7004B8139 /* AKCustom.h */,
+				04E47A281C45FBD7004B8139 /* AKCustom.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		04E47A2B1C4602FA004B8139 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A2C1C460305004B8139 /* ToastView */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		04E47A2C1C460305004B8139 /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A2D1C460305004B8139 /* Toast+UIView.h */,
+				04E47A2E1C460305004B8139 /* Toast+UIView.m */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
+		04E47A301C4603D2004B8139 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A321C4603EA004B8139 /* AKFirst.h */,
+				04E47A331C4603EA004B8139 /* AKFirst.m */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		04E47A311C4603D2004B8139 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A351C4603F6004B8139 /* AKSecond.h */,
+				04E47A361C4603F6004B8139 /* AKSecond.m */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 		AA457A46E9E8251502E683A5 /* Pods */ = {
@@ -173,6 +309,8 @@
 		D0154884E432CD6C1EA7841E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04E47A171C45F00C004B8139 /* Foundation.framework */,
+				04E47A151C45F006004B8139 /* UIKit.framework */,
 				4DE8A4635C262C28087A9D11 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -286,8 +424,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D3BF8B1C3F63FE0067B6A7 /* LaunchScreen.storyboard in Resources */,
+				04E47A131C45EC65004B8139 /* backGround@3x.png in Resources */,
+				04E47A111C45EC65004B8139 /* backGround.png in Resources */,
+				04E47A221C45F553004B8139 /* Contents.json in Resources */,
+				04E47A231C45F553004B8139 /* nav_back.png in Resources */,
 				04D3BF881C3F63FE0067B6A7 /* Assets.xcassets in Resources */,
+				04E47A121C45EC65004B8139 /* backGround@2x.png in Resources */,
+				04E47A241C45F553004B8139 /* nav_back@2x.png in Resources */,
 				04D3BF861C3F63FE0067B6A7 /* Main.storyboard in Resources */,
+				04E47A141C45EC65004B8139 /* Contents.json in Resources */,
+				04E47A251C45F553004B8139 /* nav_back@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +506,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E47A2F1C460305004B8139 /* Toast+UIView.m in Sources */,
+				04E47A291C45FBD7004B8139 /* AKCustom.m in Sources */,
 				04D3BF831C3F63FE0067B6A7 /* ViewController.m in Sources */,
+				04E47A341C4603EA004B8139 /* AKFirst.m in Sources */,
+				04E47A1C1C45F46A004B8139 /* AKNavController.m in Sources */,
+				04E47A371C4603F6004B8139 /* AKSecond.m in Sources */,
 				04D3BF801C3F63FE0067B6A7 /* AppDelegate.m in Sources */,
 				04D3BF7D1C3F63FE0067B6A7 /* main.m in Sources */,
 			);

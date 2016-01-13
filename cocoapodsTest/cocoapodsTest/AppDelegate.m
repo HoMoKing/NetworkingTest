@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "AKNavController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController * view = [[ViewController alloc]init];
+    
+    AKNavController * NC = [[AKNavController alloc]initWithRootViewController:view];
+    
+    self.window.rootViewController = NC;
+
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
