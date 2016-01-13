@@ -7,8 +7,12 @@
 //
 
 #import "AKFirst.h"
+#import "AKSecond.h"
 
 @interface AKFirst ()
+
+@property (nonatomic , assign ) int selectNum;
+
 
 @end
 
@@ -18,6 +22,8 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+     self.selectNum = 0;
     
      [self buildUI];
 }
@@ -30,13 +36,47 @@
 
     self.title = NSLocalizedString(self.titleNC, nil);
     
+    self.backGround.image = [UIImage imageNamed:@"backGround_first"];
+    
     self.view = self.backGround;
     
     self.toastStr = self.titleNC;
+    
+  
 
 }
 
+-(void)jumpSecondViewController
+{
+    self.selectNum=0;
+    
+    AKSecond * second = [[AKSecond alloc]init];
+    
+    [self.navigationController pushViewController:second animated:YES];
 
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.selectNum ++;
+    
+    MYLog(@" seleNum =======   %d", self.selectNum);
+    
+    if (self.selectNum>1) {
+        
+        return;
+    }
+    
+    if (self.selectNum==1) {
+        
+     //   MYLog(@" seleNum =======   %d", self.selectNum);
+        
+    [self performSelector:@selector(jumpSecondViewController) withObject:nil afterDelay:1.0f];
+        
+    }
+    
+
+}
 
 
 - (void)didReceiveMemoryWarning {

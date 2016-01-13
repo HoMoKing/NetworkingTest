@@ -1,5 +1,5 @@
 //
-//  AKSecond.h
+//  AKAlert.h
 //  cocoapodsTest
 //
 //  Created by mac on 16/1/13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface AKSecond : UIViewController
+@interface AKAlert : UIViewController
 
 @end

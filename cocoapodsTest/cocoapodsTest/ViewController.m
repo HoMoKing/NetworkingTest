@@ -15,6 +15,10 @@
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
 
+
+
+
+
 @end
 
 @implementation ViewController
@@ -192,20 +196,33 @@
         _backGround.userInteractionEnabled = YES;
         
         //单指单击
-        UITapGestureRecognizer * singleFingerOne = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleSingleFingerEvent:)];
         
-        singleFingerOne.numberOfTouchesRequired = 1; //手指数
-        
-        singleFingerOne.numberOfTapsRequired = 1; //tap次数
-        
-        singleFingerOne.delegate = self;
-        
-        [_backGround addGestureRecognizer:singleFingerOne];
+        [_backGround addGestureRecognizer:[self didseleViewNumberOfTouchesRequired:1 numberOfTapsRequired:1]];
         
     }
 
     return _backGround;
 }
+
+
+
+
+#pragma mark---------手势
+-(UITapGestureRecognizer *)didseleViewNumberOfTouchesRequired:(int)TouchesRequired numberOfTapsRequired:(int)TapsRequired
+{
+    UITapGestureRecognizer * singleFinger = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleSingleFingerEvent:)];
+    
+    singleFinger.numberOfTouchesRequired = TouchesRequired; //手指数
+    
+    singleFinger.numberOfTapsRequired = TapsRequired; //tap次数
+    
+    singleFinger.delegate = self;
+
+    return singleFinger;
+
+}
+
+
 
 #pragma mark---------图片手势点击
 - (void)handleSingleFingerEvent:(UITapGestureRecognizer *)sender
@@ -239,10 +256,13 @@
 
     if (str.length==0) {
         
-        [self.view makeToast:@"单指单机" duration:1.0 position:@"center" title:@"xxoo" image:[UIImage imageNamed:@"icon_smile"]];
-    }else
+        str = @"单指单击";
         
-        [self.view makeToast:str duration:1.0 position:@"center" title:@"xxoo" image:[UIImage imageNamed:@"icon_smile"]];
+    }
+        
+    [self.view makeToast:str duration:1.0 position:@"center" title:@"" image:[UIImage imageNamed:@"icon_smile"]];
+    
+    
     
 }
 

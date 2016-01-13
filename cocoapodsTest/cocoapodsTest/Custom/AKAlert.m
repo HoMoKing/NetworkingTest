@@ -1,29 +1,22 @@
 //
-//  AKSecond.m
+//  AKAlert.m
 //  cocoapodsTest
 //
 //  Created by mac on 16/1/13.
 //  Copyright © 2016年 王永军. All rights reserved.
 //
 
-#import "AKSecond.h"
+#import "AKAlert.h"
 
-@interface AKSecond ()
-
-
-
-
+@interface AKAlert ()
 
 @end
 
-@implementation AKSecond
+@implementation AKAlert
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,5 +15,8 @@
 @property (nonatomic , strong) NSMutableArray * items;
 @property (nonatomic , strong) NSString * toastStr;
 
+
+-(void)showToastViewWithTitle:(NSString *)str;
+
 @end
 

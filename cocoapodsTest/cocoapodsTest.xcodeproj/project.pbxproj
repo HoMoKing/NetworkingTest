@@ -35,6 +35,16 @@
 		04E47A481C4608D3004B8139 /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A441C4608D3004B8139 /* nav_back@2x.png */; };
 		04E47A491C4608D3004B8139 /* nav_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A451C4608D3004B8139 /* nav_back@3x.png */; };
 		04E47A4C1C460D25004B8139 /* AKParseUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A4B1C460D25004B8139 /* AKParseUrl.m */; };
+		04E47A5B1C46100E004B8139 /* backGround_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A571C46100E004B8139 /* backGround_first.png */; };
+		04E47A5C1C46100E004B8139 /* backGround_first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A581C46100E004B8139 /* backGround_first@2x.png */; };
+		04E47A5D1C46100E004B8139 /* backGround_first@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A591C46100E004B8139 /* backGround_first@3x.png */; };
+		04E47A5E1C46100E004B8139 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A5A1C46100E004B8139 /* Contents.json */; };
+		04E47A641C46104F004B8139 /* backGround_Second.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A601C46104F004B8139 /* backGround_Second.png */; };
+		04E47A651C46104F004B8139 /* backGround_Second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A611C46104F004B8139 /* backGround_Second@2x.png */; };
+		04E47A661C46104F004B8139 /* backGround_Second@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A621C46104F004B8139 /* backGround_Second@3x.png */; };
+		04E47A671C46104F004B8139 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E47A631C46104F004B8139 /* Contents.json */; };
+		04E47A6B1C461144004B8139 /* UIViewController+Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A6A1C461144004B8139 /* UIViewController+Example.m */; };
+		04E47A6E1C462906004B8139 /* AKAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E47A6D1C462906004B8139 /* AKAlert.m */; };
 		709AE2B30EBF41B99625E340 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE8A4635C262C28087A9D11 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +111,18 @@
 		04E47A451C4608D3004B8139 /* nav_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@3x.png"; sourceTree = "<group>"; };
 		04E47A4A1C460D25004B8139 /* AKParseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKParseUrl.h; sourceTree = "<group>"; };
 		04E47A4B1C460D25004B8139 /* AKParseUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKParseUrl.m; sourceTree = "<group>"; };
+		04E47A571C46100E004B8139 /* backGround_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGround_first.png; sourceTree = "<group>"; };
+		04E47A581C46100E004B8139 /* backGround_first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGround_first@2x.png"; sourceTree = "<group>"; };
+		04E47A591C46100E004B8139 /* backGround_first@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGround_first@3x.png"; sourceTree = "<group>"; };
+		04E47A5A1C46100E004B8139 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		04E47A601C46104F004B8139 /* backGround_Second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGround_Second.png; sourceTree = "<group>"; };
+		04E47A611C46104F004B8139 /* backGround_Second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGround_Second@2x.png"; sourceTree = "<group>"; };
+		04E47A621C46104F004B8139 /* backGround_Second@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backGround_Second@3x.png"; sourceTree = "<group>"; };
+		04E47A631C46104F004B8139 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		04E47A691C461144004B8139 /* UIViewController+Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Example.h"; sourceTree = "<group>"; };
+		04E47A6A1C461144004B8139 /* UIViewController+Example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Example.m"; sourceTree = "<group>"; };
+		04E47A6C1C462906004B8139 /* AKAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAlert.h; sourceTree = "<group>"; };
+		04E47A6D1C462906004B8139 /* AKAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAlert.m; sourceTree = "<group>"; };
 		4DE8A4635C262C28087A9D11 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37DE3BBA0DA2A9EDDDB3848 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FDDF00DC0C6B3F47E3E1FD95 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +189,7 @@
 				04E47A311C4603D2004B8139 /* Second */,
 				04E47A261C45FBC2004B8139 /* Custom */,
 				04E47A191C45F438004B8139 /* Main */,
+				04E47A681C461144004B8139 /* Categroy */,
 				04E47A2B1C4602FA004B8139 /* Lib */,
 				04D3BFAE1C3F80C60067B6A7 /* Other */,
 				04D3BF841C3F63FE0067B6A7 /* Main.storyboard */,
@@ -229,6 +252,8 @@
 				04E47A411C4608D3004B8139 /* nav_back.imageset */,
 				04E47A381C4608C9004B8139 /* icon_smile.imageset */,
 				04E47A0C1C45EC65004B8139 /* backGround.imageset */,
+				04E47A561C46100E004B8139 /* backGround_first.imageset */,
+				04E47A5F1C46104F004B8139 /* backGround_Second.imageset */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -258,6 +283,8 @@
 			children = (
 				04E47A271C45FBD7004B8139 /* AKCustom.h */,
 				04E47A281C45FBD7004B8139 /* AKCustom.m */,
+				04E47A6C1C462906004B8139 /* AKAlert.h */,
+				04E47A6D1C462906004B8139 /* AKAlert.m */,
 				04E47A4A1C460D25004B8139 /* AKParseUrl.h */,
 				04E47A4B1C460D25004B8139 /* AKParseUrl.m */,
 			);
@@ -319,6 +346,37 @@
 				04E47A451C4608D3004B8139 /* nav_back@3x.png */,
 			);
 			path = nav_back.imageset;
+			sourceTree = "<group>";
+		};
+		04E47A561C46100E004B8139 /* backGround_first.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A571C46100E004B8139 /* backGround_first.png */,
+				04E47A581C46100E004B8139 /* backGround_first@2x.png */,
+				04E47A591C46100E004B8139 /* backGround_first@3x.png */,
+				04E47A5A1C46100E004B8139 /* Contents.json */,
+			);
+			path = backGround_first.imageset;
+			sourceTree = "<group>";
+		};
+		04E47A5F1C46104F004B8139 /* backGround_Second.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A601C46104F004B8139 /* backGround_Second.png */,
+				04E47A611C46104F004B8139 /* backGround_Second@2x.png */,
+				04E47A621C46104F004B8139 /* backGround_Second@3x.png */,
+				04E47A631C46104F004B8139 /* Contents.json */,
+			);
+			path = backGround_Second.imageset;
+			sourceTree = "<group>";
+		};
+		04E47A681C461144004B8139 /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				04E47A691C461144004B8139 /* UIViewController+Example.h */,
+				04E47A6A1C461144004B8139 /* UIViewController+Example.m */,
+			);
+			path = Categroy;
 			sourceTree = "<group>";
 		};
 		AA457A46E9E8251502E683A5 /* Pods */ = {
@@ -449,19 +507,27 @@
 			files = (
 				04E47A3F1C4608C9004B8139 /* icon_smile@2x.png in Resources */,
 				04D3BF8B1C3F63FE0067B6A7 /* LaunchScreen.storyboard in Resources */,
+				04E47A5D1C46100E004B8139 /* backGround_first@3x.png in Resources */,
+				04E47A5C1C46100E004B8139 /* backGround_first@2x.png in Resources */,
 				04E47A131C45EC65004B8139 /* backGround@3x.png in Resources */,
 				04E47A111C45EC65004B8139 /* backGround.png in Resources */,
 				04D3BF881C3F63FE0067B6A7 /* Assets.xcassets in Resources */,
+				04E47A661C46104F004B8139 /* backGround_Second@3x.png in Resources */,
 				04E47A121C45EC65004B8139 /* backGround@2x.png in Resources */,
 				04D3BF861C3F63FE0067B6A7 /* Main.storyboard in Resources */,
+				04E47A651C46104F004B8139 /* backGround_Second@2x.png in Resources */,
 				04E47A3E1C4608C9004B8139 /* icon_smile.png in Resources */,
 				04E47A141C45EC65004B8139 /* Contents.json in Resources */,
 				04E47A401C4608C9004B8139 /* icon_smile@3x.png in Resources */,
 				04E47A491C4608D3004B8139 /* nav_back@3x.png in Resources */,
 				04E47A3D1C4608C9004B8139 /* Contents.json in Resources */,
 				04E47A481C4608D3004B8139 /* nav_back@2x.png in Resources */,
+				04E47A671C46104F004B8139 /* Contents.json in Resources */,
+				04E47A641C46104F004B8139 /* backGround_Second.png in Resources */,
 				04E47A471C4608D3004B8139 /* nav_back.png in Resources */,
+				04E47A5B1C46100E004B8139 /* backGround_first.png in Resources */,
 				04E47A461C4608D3004B8139 /* Contents.json in Resources */,
+				04E47A5E1C46100E004B8139 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,12 +603,14 @@
 				04E47A2F1C460305004B8139 /* Toast+UIView.m in Sources */,
 				04E47A291C45FBD7004B8139 /* AKCustom.m in Sources */,
 				04D3BF831C3F63FE0067B6A7 /* ViewController.m in Sources */,
+				04E47A6B1C461144004B8139 /* UIViewController+Example.m in Sources */,
 				04E47A4C1C460D25004B8139 /* AKParseUrl.m in Sources */,
 				04E47A341C4603EA004B8139 /* AKFirst.m in Sources */,
 				04E47A1C1C45F46A004B8139 /* AKNavController.m in Sources */,
 				04E47A371C4603F6004B8139 /* AKSecond.m in Sources */,
 				04D3BF801C3F63FE0067B6A7 /* AppDelegate.m in Sources */,
 				04D3BF7D1C3F63FE0067B6A7 /* main.m in Sources */,
+				04E47A6E1C462906004B8139 /* AKAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
