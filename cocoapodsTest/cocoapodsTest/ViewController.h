@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic , strong) UIImageView * backGround;
+@property (nonatomic , strong) UITableView * tableView;
+@property (nonatomic , strong) NSMutableArray * items;
+@property (nonatomic , strong) NSString * toastStr;
 
 @end
 

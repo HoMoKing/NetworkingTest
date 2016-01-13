@@ -45,7 +45,7 @@
     UIFont * font = [UIFont fontWithName:@"Arial-ItalicMT" size:TITLEFONT];
     
     NSDictionary * textAttributes = @{NSFontAttributeName:font,
-                                      NSForegroundColorAttributeName:MYColor(159, 211, 79)};
+                                      NSForegroundColorAttributeName:[UIColor whiteColor]};
     
     [[UINavigationBar appearance]setTitleTextAttributes:textAttributes];
     
@@ -57,7 +57,7 @@
     
     shadow.shadowColor = MYColor(159, 211, 79);
     
-    [barItem setTintColor:MYColor(159, 211, 79)];
+    [barItem setTintColor:[UIColor whiteColor]];
     
     // 修改item上面的文字样式
     //    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:MYColor(159, 211, 79),NSForegroundColorAttributeName,  [UIFont fontWithName:@"SnellRoundhand-Bold"size:TITLEFONT],NSFontAttributeName ,shadow,NSShadowAttributeName,nil];

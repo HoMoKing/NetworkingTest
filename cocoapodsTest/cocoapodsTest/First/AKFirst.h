@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface AKFirst : UIViewController
+@interface AKFirst : ViewController
+
+@property (nonatomic , strong) NSString * titleNC;
 
 @end

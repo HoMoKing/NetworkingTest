@@ -1,9 +1,9 @@
 //
-//  Toast+UIView.m
-//  Toast
-//  Version 2.0
+//  Toast+UIView.h
+//  cocoapodsTest
 //
-//  Copyright 2013 Charles Scalesse.
+//  Created by mac on 16/1/13.
+//  Copyright © 2016年 王永军. All rights reserved.
 //
 
 #import "Toast+UIView.h"

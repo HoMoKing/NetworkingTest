@@ -15,10 +15,6 @@
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
 
-@property (nonatomic , strong) UIImageView * backGround;
-@property (nonatomic , strong) UITableView * tableView;
-@property (nonatomic , strong) NSMutableArray * items;
-
 @end
 
 @implementation ViewController
@@ -128,6 +124,8 @@
     
     AKFirst * first = [[AKFirst alloc]init];
     
+    first.titleNC = self.items[indexPath.row];
+    
     [self.navigationController pushViewController:first animated:YES];
 
 }
@@ -219,13 +217,32 @@
        //单指单击
         
        MYLog(@"单指单击");
-        
+      
+
+          [self showToastViewWithTitle:self.toastStr];
+      
+      
+      
        }else if(sender.numberOfTapsRequired == 2){
             
          //单指双击
             
          MYLog(@"单指双击");
     }
+    
+}
+
+
+#pragma mark---------弹出框
+-(void)showToastViewWithTitle:(NSString *)str
+{
+
+    if (str.length==0) {
+        
+        [self.view makeToast:@"单指单机" duration:1.0 position:@"center" title:@"xxoo" image:[UIImage imageNamed:@"icon_smile"]];
+    }else
+        
+        [self.view makeToast:str duration:1.0 position:@"center" title:@"xxoo" image:[UIImage imageNamed:@"icon_smile"]];
     
 }
 

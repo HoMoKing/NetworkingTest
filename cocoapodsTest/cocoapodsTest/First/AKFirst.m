@@ -15,11 +15,29 @@
 @implementation AKFirst
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+     [self buildUI];
 }
+
+
+#pragma mark---------UI
+-(void)buildUI
+{
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    self.title = NSLocalizedString(self.titleNC, nil);
+    
+    self.view = self.backGround;
+    
+    self.toastStr = self.titleNC;
+
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
