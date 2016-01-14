@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B26541C475BAB00CF0421 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 045B26501C475BAB00CF0421 /* Contents.json */; };
+		045B26551C475BAB00CF0421 /* order_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B26511C475BAB00CF0421 /* order_success.png */; };
+		045B26561C475BAB00CF0421 /* order_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B26521C475BAB00CF0421 /* order_success@2x.png */; };
+		045B26571C475BAB00CF0421 /* order_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045B26531C475BAB00CF0421 /* order_success@3x.png */; };
 		04D3BF7D1C3F63FE0067B6A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3BF7C1C3F63FE0067B6A7 /* main.m */; };
 		04D3BF801C3F63FE0067B6A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3BF7F1C3F63FE0067B6A7 /* AppDelegate.m */; };
 		04D3BF831C3F63FE0067B6A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3BF821C3F63FE0067B6A7 /* ViewController.m */; };
@@ -66,6 +70,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045B26501C475BAB00CF0421 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		045B26511C475BAB00CF0421 /* order_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order_success.png; sourceTree = "<group>"; };
+		045B26521C475BAB00CF0421 /* order_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "order_success@2x.png"; sourceTree = "<group>"; };
+		045B26531C475BAB00CF0421 /* order_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "order_success@3x.png"; sourceTree = "<group>"; };
 		04D3BF781C3F63FE0067B6A7 /* cocoapodsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocoapodsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D3BF7C1C3F63FE0067B6A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D3BF7E1C3F63FE0067B6A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +164,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045B264F1C475BAB00CF0421 /* order_success.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				045B26501C475BAB00CF0421 /* Contents.json */,
+				045B26511C475BAB00CF0421 /* order_success.png */,
+				045B26521C475BAB00CF0421 /* order_success@2x.png */,
+				045B26531C475BAB00CF0421 /* order_success@3x.png */,
+			);
+			path = order_success.imageset;
+			sourceTree = "<group>";
+		};
 		04D3BF6F1C3F63FE0067B6A7 = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +268,7 @@
 		04E47A0B1C45EC65004B8139 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				045B264F1C475BAB00CF0421 /* order_success.imageset */,
 				04E47A411C4608D3004B8139 /* nav_back.imageset */,
 				04E47A381C4608C9004B8139 /* icon_smile.imageset */,
 				04E47A0C1C45EC65004B8139 /* backGround.imageset */,
@@ -506,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E47A3F1C4608C9004B8139 /* icon_smile@2x.png in Resources */,
+				045B26571C475BAB00CF0421 /* order_success@3x.png in Resources */,
 				04D3BF8B1C3F63FE0067B6A7 /* LaunchScreen.storyboard in Resources */,
 				04E47A5D1C46100E004B8139 /* backGround_first@3x.png in Resources */,
 				04E47A5C1C46100E004B8139 /* backGround_first@2x.png in Resources */,
@@ -516,8 +537,11 @@
 				04E47A121C45EC65004B8139 /* backGround@2x.png in Resources */,
 				04D3BF861C3F63FE0067B6A7 /* Main.storyboard in Resources */,
 				04E47A651C46104F004B8139 /* backGround_Second@2x.png in Resources */,
+				045B26541C475BAB00CF0421 /* Contents.json in Resources */,
+				045B26551C475BAB00CF0421 /* order_success.png in Resources */,
 				04E47A3E1C4608C9004B8139 /* icon_smile.png in Resources */,
 				04E47A141C45EC65004B8139 /* Contents.json in Resources */,
+				045B26561C475BAB00CF0421 /* order_success@2x.png in Resources */,
 				04E47A401C4608C9004B8139 /* icon_smile@3x.png in Resources */,
 				04E47A491C4608D3004B8139 /* nav_back@3x.png in Resources */,
 				04E47A3D1C4608C9004B8139 /* Contents.json in Resources */,

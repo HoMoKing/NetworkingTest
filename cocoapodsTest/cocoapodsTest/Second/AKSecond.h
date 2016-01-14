@@ -11,4 +11,6 @@
 
 @interface AKSecond : UIViewController
 
+@property (nonatomic , strong) UIImageView * bgImageView;
+
 @end

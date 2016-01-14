@@ -38,4 +38,4 @@
 
 #define kScreenWidth    [UIScreen mainScreen].bounds.size.width
 
-
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
