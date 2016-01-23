@@ -19,3 +19,5 @@
 #import "Toast+UIView.h"
 #import "UIViewController+Example.h"
 #import "UIKit+AFNetworking.h"
+#import "UIView UIViewSAAdditions.h"
+#import "AKSingleton.h"

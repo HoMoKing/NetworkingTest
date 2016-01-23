@@ -13,8 +13,7 @@
 #define BACKGROUNDIMAGE @"backGround"
 #define kDKTableViewDefaultContentInset 300.0f
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
-
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate,UITextFieldDelegate>
 
 
 
@@ -286,6 +285,64 @@
             
     }
     
+}
+
+
+int prewTag ;  //编辑上一个UITextField的TAG,需要在XIB文件中定义或者程序中添加，不能让两个控件的TAG相同
+float prewMoveY; //编辑的时候移动的高度
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    CGRect textFrame = textField.frame;
+    
+    CGFloat textY = textFrame.origin.y+textFrame.size.height;
+
+    CGFloat bottomY = self.view.height-textY;
+    
+    if (bottomY>=216) { //判断当前的高度是否已经有216，如果超过了就不需要再移动主界面的View高度
+        prewTag = -1;
+        return;
+        
+    }
+    
+    prewTag = textField.tag;
+    float moveY = 216-bottomY;
+    prewMoveY = moveY;
+    
+    NSTimeInterval animationDuration = 0.30f;
+    CGRect frame = self.view.frame;
+    frame.origin.y -=moveY;//view的Y轴上移
+    [UIView beginAnimations:@"ResizeView" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    self.view.frame = frame;
+    [UIView commitAnimations];//设置调整界面的动画效果
+
+}
+
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+
+    if(prewTag == -1) //当编辑的View不是需要移动的View
+    {
+        return;
+    }
+    float moveY ;
+    NSTimeInterval animationDuration = 0.30f;
+    CGRect frame = self.view.frame;
+    if(prewTag == textField.tag) //当结束编辑的View的TAG是上次的就移动
+    {   //还原界面
+        moveY =  prewMoveY;
+        frame.origin.y +=moveY;
+    }
+    //self.view移回原位置
+    [UIView beginAnimations:@"ResizeView" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    self.view.frame = frame;
+    [UIView commitAnimations];
+    [textField resignFirstResponder];
+
+
 }
 
 - (void)didReceiveMemoryWarning {

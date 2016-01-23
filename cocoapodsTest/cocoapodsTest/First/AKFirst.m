@@ -8,12 +8,16 @@
 
 #import "AKFirst.h"
 #import "AKSecond.h"
+#import "AKThird.h"
 
-@interface AKFirst ()
+@interface AKFirst ()<UISearchBarDelegate>
 
 @property (nonatomic , assign ) int selectNum;
 @property (nonatomic , strong) UIButton * click;
 @property (nonatomic , strong) UIActivityIndicatorView * hub;
+
+@property (strong, nonatomic) UITextField *searchText;
+@property (strong, nonatomic) UISearchBar *search;//选择
 
 @end
 
@@ -29,7 +33,8 @@
     
      [self buildUI];
      [self layoutUI];
-    [self showJuHua];
+     [self showJuHua];
+     [self addRightBatButtonItem];
     
 }
 
@@ -49,8 +54,6 @@
     
     [self.backGround addSubview:self.click];
     
-    
-
 }
 
 -(void)layoutUI
@@ -116,7 +119,17 @@
         
         [self.hub startAnimating];
 
+    AKThird * third = [[AKThird alloc]init];
+    
+    AKSingleton * singleton = [AKSingleton sharedManager];
+    
+    third.bgImageView = [singleton getBackgroundImageView:self.navigationController];
 
+    third.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [self presentViewController:third animated:YES completion:^{
+        
+    }];
 
 }
 
@@ -125,8 +138,18 @@
     self.selectNum=0;
     
     AKSecond * second = [[AKSecond alloc]init];
+
+    __weak typeof(self) weakSelf = self;
     
-    second.bgImageView = [self getBackgroundImageView];
+    second.changeBGBlock = ^(UIImage * backImage)
+    {
+        //[weakSelf.view removeAllSubviews];
+        weakSelf.backGround.image = backImage;
+    };
+    
+    AKSingleton * singleton = [AKSingleton sharedManager];
+    
+    second.bgImageView = [singleton getBackgroundImageView:self.navigationController];
     
      second.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
@@ -136,6 +159,62 @@
 
 }
 
+
+-(void)addRightBatButtonItem
+{
+
+    //图片渲染
+    UIImage * image = [[UIImage imageNamed:@"search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UIButton *button  = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    button.frame = CGRectMake(0,0, 48 / 2, 48 / 2);
+   
+    [button setImage:image forState:UIControlStateNormal];
+    
+    [button addTarget:self action:@selector(searchAction) forControlEvents:UIControlEventTouchUpInside];
+
+    
+    UIBarButtonItem *barbutton = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = barbutton;
+    
+
+
+}
+
+
+-(void)searchAction
+{
+    
+    UISearchBar *search = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.width, (56 + 16 + 16) / 2)];
+    
+    self.search = search;
+    
+    search.placeholder  = @"搜索你感兴趣的话题";
+    search.delegate = self;
+    [self.view addSubview:search];
+    [search becomeFirstResponder];
+    
+    self.navigationItem.titleView = search;
+    
+    //取消
+    UIBarButtonItem *cancel = [[UIBarButtonItem alloc]
+                               initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction)];
+    cancel.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = cancel;
+
+    
+    
+}
+
+/**
+ *  取消
+ */
+- (void)cancelAction{
+
+    self.search = nil;
+    [self addRightBatButtonItem];
+
+}
 
 
 -(void)showJuHua
@@ -159,20 +238,7 @@
 
 }
 
-#pragma mark--------立即预约弹出框
-- (UIImageView*)getBackgroundImageView{
-    
-    UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
-    
-    [self.navigationController.view.layer renderInContext:
-     UIGraphicsGetCurrentContext()];
-    
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return [[UIImageView alloc] initWithImage:image];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

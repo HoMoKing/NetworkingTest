@@ -8,17 +8,22 @@
 
 #import "AKSecond.h"
 
+
 @interface AKSecond ()
-    {
+{
         NSInteger _countDownTome;
         NSTimer *_timer;
-    }
+}
+
+
+
 @property (nonatomic , strong) UIView * toolTip;
 @property (nonatomic , strong) UILabel * titleLB;
 @property (nonatomic , strong) UIImageView * img;
 @property (nonatomic , strong) UILabel * countdownLB;
 
 @property (nonatomic , strong) UIView * bgView;
+
 @end
 
 @implementation AKSecond
@@ -42,6 +47,16 @@
 
 -(void)buildUI
 {
+    
+    CABasicAnimation *pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    pulse.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    pulse.duration = 0.5 + (rand() % 10) * 0.05;
+    pulse.repeatCount = 1;
+    pulse.autoreverses = YES;
+    pulse.fromValue = [NSNumber numberWithFloat:.8];
+    pulse.toValue = [NSNumber numberWithFloat:1.2];
+    [self.toolTip.layer addAnimation:pulse forKey:nil];
+    
     [self.view addSubview:self.bgImageView];
     [self.view addSubview:self.bgView];
     self.title = NSLocalizedString(@"nono", nil);
@@ -50,7 +65,8 @@
     [self.view addSubview:self.titleLB];
     [self.view addSubview:self.img];
     [self.view addSubview:self.countdownLB];
-   
+    
+
 }
 
 
@@ -94,6 +110,14 @@
         
     }];
     
+}
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UIImage * image = [UIImage imageNamed:@"backGround"];
+    self.changeBGBlock(image);
+
 }
 
 
@@ -225,6 +249,9 @@
     //关闭定时器
     [_timer setFireDate:[NSDate distantFuture]];
 }
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
